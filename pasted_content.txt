@@ -1,0 +1,685 @@
+Crie do zero uma plataforma chamada OrçaAgenda. Meu nome é Nicolas, sou iniciante e uso Windows.
+
+Você deve criar o projeto completo, programar, testar, corrigir problemas e entregar os arquivos com um tutorial de instalação.
+
+Não tenho ZIP nem código anterior para enviar. Minha participação deve ser configurar contas e credenciais, seguir o tutorial e administrar a plataforma pelo painel.
+
+Quero vender sistemas de orçamento e agendamento para várias empresas. Também quero encontrar potenciais clientes no Brasil, selecionar uma empresa, criar automaticamente uma demonstração personalizada e receber uma mensagem pronta para enviar.
+
+1. REQUISITOS PRINCIPAIS
+
+Quero:
+- Uma plataforma única para várias empresas.
+- Interface profissional, bonita e responsiva.
+- Agendamentos com calendário personalizado e animações.
+- Segurança implementada no servidor.
+- Prospecção de empresas por cidade e segmento.
+- Preferência por empresas encontradas no Google Maps.
+- Telefone comercial público e mensagem personalizada.
+- Botão “Aceitar cliente e criar projeto”.
+- Criação automática da demonstração dentro da plataforma.
+- Link pronto para apresentar à empresa.
+- Ativação do sistema definitivo após a contratação.
+- Tutorial completo para configurar e publicar.
+- Prioridade absoluta para custo zero inicial e uso comercial permitido.
+
+Não entregue apenas um planejamento, telas estáticas ou botões sem funcionamento.
+
+2. HOSPEDAGEM E CUSTOS
+
+Antes de implementar, verifique em fontes oficiais quais serviços atendem ao projeto gratuitamente e permitem uso comercial.
+
+Avalie Cloudflare Pages/Workers e Supabase, ou outra combinação adequada. Escolha tecnologias compatíveis com os limites reais da hospedagem.
+
+Não utilize Vercel Hobby para operação comercial se os termos atuais não permitirem. Se Vercel exigir pagamento para minha finalidade, escolha outra hospedagem.
+
+Verifique:
+- Necessidade de cartão.
+- Cotas gratuitas.
+- Suspensão por inatividade.
+- Limites de execução e armazenamento.
+- Comportamento ao atingir as cotas.
+- Possibilidade de cobrança automática.
+- Custos das integrações de busca e IA.
+
+Não ative testes pagos, assinaturas, cobrança ou cartão sem minha autorização.
+
+Use um subdomínio gratuito da hospedagem. Domínio próprio deve ser opcional.
+
+Não prometa uso ilimitado ou gratuidade permanente. Se uma funcionalidade não for viável gratuitamente, explique e implemente a alternativa gratuita mais próxima, identificando suas limitações.
+
+3. ARQUITETURA
+
+Crie uma aplicação única com:
+- Frontend responsivo.
+- Backend com autenticação e autorização.
+- Banco persistente.
+- Separação dos dados por empresa.
+- Migrações do banco.
+- Configuração inicial reproduzível.
+- Componentes e temas reutilizáveis.
+
+Não use localStorage, arquivos temporários ou memória de funções como banco de produção.
+
+Use autenticação consolidada. Se utilizar Supabase, configure corretamente as políticas de acesso entre empresas.
+
+Não dependa de Google Apps Script para o funcionamento principal.
+
+O projeto deve ser exportável e funcionar fora do ambiente do Manus. Explique qualquer dependência específica do Manus, seus custos e como substituí-la.
+
+4. FLUXO COMPLETO DE VENDA
+
+Quero executar este processo:
+
+1. Entrar no meu painel.
+2. Escolher estado, cidade e segmento.
+3. Pesquisar empresas reais.
+4. Visualizar nome, localização, contato, fontes e motivos da sugestão.
+5. Selecionar uma empresa.
+6. Clicar em “Aceitar cliente e criar projeto”.
+7. Acompanhar a preparação automática da demonstração.
+8. Revisar a prévia e completar informações ausentes.
+9. Aprovar e gerar o link.
+10. Receber a mensagem personalizada em meu nome.
+11. Copiar ou abrir a conversa e enviar manualmente.
+12. Registrar a negociação.
+13. Quando a empresa contratar, clicar em “Ativar cliente”.
+14. Confirmar serviços, preços e horários.
+15. Habilitar reservas reais.
+
+Depois da instalação inicial, não quero editar código, criar outra hospedagem, repositório ou planilha para cada cliente.
+
+5. PAINEL DO NICOLAS
+
+Inclua:
+- Login protegido.
+- Cadastro, edição e suspensão de empresas.
+- Gerenciamento dos acessos.
+- Prospecção.
+- Demonstrações.
+- Negociações.
+- Configurações de IA.
+- Limites de consumo.
+- Indicadores reais.
+- Histórico das ações administrativas importantes.
+- Links públicos das empresas.
+- Ações de visualizar, editar, ativar e desativar demonstrações.
+
+Não invente números de clientes, faturamento ou mensagens enviadas.
+
+6. PAINEL DA EMPRESA
+
+Cada empresa deve poder gerenciar:
+- Nome, descrição, logotipo e cores.
+- Contatos comerciais.
+- Endereço ou área de atendimento.
+- Serviços.
+- Preços.
+- Duração dos atendimentos.
+- Horários de funcionamento.
+- Pausas e folgas.
+- Bloqueios.
+- Agenda.
+- Orçamentos.
+- Aprovações.
+- Cancelamentos e reagendamentos.
+- Exportação dos próprios registros.
+
+Cada empresa deve acessar somente seus dados. Valide isso no servidor e no banco quando aplicável.
+
+Trocar um identificador na requisição não pode permitir acesso a outra empresa.
+
+7. DESIGN PROFISSIONAL
+
+Quero um produto visualmente bem acabado, especialmente nas páginas de agendamento.
+
+Crie:
+- Identidade própria do OrçaAgenda.
+- Logotipo inicial simples e favicon.
+- Tipografia legível.
+- Espaçamento consistente.
+- Cards elegantes.
+- Ícones padronizados.
+- Contraste acessível.
+- Navegação clara.
+- Boa experiência em celular e computador.
+- Estados de carregamento, sucesso, erro e listas vazias.
+
+Use menu lateral no painel de computador e navegação adaptada no celular.
+
+Crie pelo menos três temas:
+- Beleza e estética.
+- Manutenção e assistência técnica.
+- Serviços profissionais.
+
+Os temas devem compartilhar componentes e regras de negócio, sem criar projetos separados.
+
+Não invente depoimentos, avaliações ou resultados comerciais.
+
+8. ANIMAÇÕES
+
+Implemente animações profissionais, discretas e relacionadas à ação:
+- Transições entre etapas.
+- Destaque de serviço e horário selecionados.
+- Abertura de detalhes e painéis.
+- Feedback de salvamento.
+- Indicadores de carregamento.
+- Confirmação visual após sucesso real.
+
+Evite exageros e lentidão. Respeite movimento reduzido e navegação por teclado.
+
+Não use animações para fingir processamento ou confirmação.
+
+9. AGENDAMENTO PÚBLICO
+
+Crie as etapas:
+- Serviço.
+- Data.
+- Horário.
+- Informações do consumidor.
+- Revisão.
+- Confirmação.
+
+Inclua:
+- Identidade visual da empresa.
+- Cards com serviços, descrição e duração.
+- Preço quando definido.
+- Indicador de progresso.
+- Calendário personalizado.
+- Dias disponíveis e indisponíveis.
+- Horários em botões.
+- Resumo atualizado.
+- Comprovante bem apresentado.
+
+Preserve os dados quando o usuário voltar uma etapa.
+
+Só mostre confirmação depois de a operação ser concluída no servidor.
+
+10. SERVIÇOS E ORÇAMENTOS
+
+Permita configurar:
+- Nome e descrição.
+- Preço fixo ou avaliação manual.
+- Duração.
+- Intervalo entre atendimentos.
+- Quantidade quando aplicável.
+- Área de atendimento.
+- Regras necessárias ao cálculo.
+
+Calcule valores no servidor com precisão monetária adequada.
+
+Não confie no preço enviado pelo navegador.
+
+Serviços sem preço definido devem gerar pedidos de avaliação. Não invente valores nem confirme automaticamente algo que depende de análise.
+
+11. DISPONIBILIDADE E RESERVAS
+
+Permita configurar:
+- Dias e horários de funcionamento.
+- Pausas.
+- Folgas.
+- Bloqueios.
+- Antecedência mínima.
+- Limite de dias futuros.
+- Fuso horário.
+
+Impeça sobreposição considerando duração e intervalos.
+
+Use mecanismos transacionais ou equivalentes no banco para impedir reservas simultâneas conflitantes.
+
+Implemente idempotência: repetir uma solicitação não pode criar reservas duplicadas.
+
+Se o resultado de uma operação ficar incerto, permita consultar antes de repetir.
+
+Cancelamentos e reagendamentos devem respeitar as regras e revalidar disponibilidade.
+
+Proteja a consulta do consumidor sem expor dados pessoais em links previsíveis.
+
+12. APROVAÇÃO AUTOMÁTICA OU MANUAL
+
+Cada empresa deve escolher:
+
+Confirmação automática:
+- Confirma quando serviço, dados e disponibilidade forem válidos.
+
+Aprovação manual:
+- Registra “Aguardando aprovação”.
+- Permite aceitar ou recusar.
+- Define se o horário fica temporariamente retido.
+- Configura a expiração.
+- Revalida disponibilidade ao aprovar.
+
+Prepare mensagens de confirmação, recusa, cancelamento e reagendamento.
+
+Não diga que o consumidor foi avisado se nenhuma comunicação foi enviada.
+
+13. AGENDA DA EMPRESA
+
+Inclua:
+- Calendário e lista.
+- Visualizações mensal, semanal e diária.
+- Próximos atendimentos.
+- Filtros por período e situação.
+- Situações identificadas por texto e cor.
+- Detalhes em painel lateral ou janela.
+- Aprovar, recusar, cancelar, reagendar e concluir.
+- Bloqueios manuais.
+- Mensagem pronta referente ao atendimento.
+
+Todas as alterações devem ser persistidas no banco.
+
+14. CONFIGURAÇÃO COM IA
+
+Quero cadastrar uma empresa por formulário ou texto, por exemplo:
+
+“Prepare uma configuração para uma empresa de limpeza em Curitiba chamada [nome], que atende de segunda a sábado.”
+
+A IA deve preparar um rascunho editável.
+
+Não invente telefone, endereço, preços, duração ou condições comerciais. Destaque os campos ausentes.
+
+Eu reviso antes de ativar.
+
+Tudo deve ser editável pelo painel, sem modificar código.
+
+15. PROSPECÇÃO COM PREFERÊNCIA PELO GOOGLE MAPS
+
+Crie um módulo exclusivo do Nicolas para encontrar empresas por:
+- Estado.
+- Cidade.
+- Segmento.
+- Palavras-chave.
+- Quantidade máxima.
+- Regiões já pesquisadas.
+
+Exemplos: limpeza, manutenção, oficinas, assistência técnica, salões, barbearias, estética, instalação e serviços residenciais.
+
+Quero priorizar empresas encontradas no Google Maps e visualizar seus contatos comerciais públicos.
+
+Minha restrição é não ativar cobrança do Google Places nem depender obrigatoriamente de uma API paga.
+
+Verifique se existe uma integração permitida que atenda a isso. Se não existir uma opção gratuita adequada para consultar o Maps automaticamente, explique claramente e use outras fontes públicas permitidas, mantendo o link do Maps quando encontrado e verificado.
+
+Não burle CAPTCHA, login, bloqueios ou restrições de acesso.
+
+Não invente empresas, telefones ou links.
+
+Diferencie:
+- Uma pesquisa realizada por você durante o desenvolvimento.
+- Uma integração que o aplicativo consegue executar sozinho depois.
+
+Sua navegação pontual não deve ser apresentada como uma funcionalidade instalada no sistema.
+
+16. FUNCIONAMENTO DA BUSCA
+
+Implemente:
+- Buscas limitadas.
+- Paginação.
+- Progresso.
+- Histórico.
+- Cancelamento.
+- Retomada quando necessário.
+- Deduplicação.
+- Tratamento de indisponibilidade da fonte.
+- Limites de consumo.
+
+Respeite o tempo de execução da hospedagem. Divida trabalhos maiores em etapas persistidas.
+
+Não prometa pesquisar todas as empresas do Brasil de uma vez.
+
+Inclua importação de CSV e cadastro por URL pública como alternativas claramente identificadas.
+
+Nunca substitua resultados reais por dados fictícios sem avisar.
+
+17. INFORMAÇÕES DOS POTENCIAIS CLIENTES
+
+Mostre e armazene, quando disponível:
+- Nome da empresa.
+- Segmento.
+- Cidade e estado.
+- Site.
+- Link verificado do Google Maps.
+- Telefone comercial público.
+- E-mail comercial público.
+- WhatsApp divulgado pela empresa.
+- URLs das fontes.
+- Data da consulta.
+- Situação da verificação.
+- Observações.
+- Histórico da negociação.
+
+Não considere qualquer telefone como WhatsApp confirmado.
+
+Não colete CPF, informações privadas ou dados dos consumidores dessas empresas.
+
+Remova duplicados por domínio, telefone e combinação de nome e cidade.
+
+18. INDICAÇÃO DOS MELHORES POTENCIAIS CLIENTES
+
+Crie uma pontuação explicável de adequação ao OrçaAgenda.
+
+Considere evidências como:
+- Atividade que envolve agendamento.
+- Serviços que dependem de orçamento.
+- Canal comercial disponível.
+- Link público de agendamento encontrado ou não encontrado nas fontes.
+
+Mostre os motivos da sugestão.
+
+Não afirme que uma empresa precisa do meu sistema sem evidência. Apresente como potencial cliente.
+
+Não invente faturamento, problemas internos ou probabilidade de compra.
+
+Quando uma informação não aparecer, use “não encontrado nas fontes consultadas”.
+
+19. BOTÃO “ACEITAR CLIENTE E CRIAR PROJETO”
+
+Esse botão é obrigatório em cada potencial cliente.
+
+Ao clicar, o sistema deve:
+1. Cadastrar ou vincular a empresa sem duplicar registros.
+2. Aproveitar os dados públicos verificados.
+3. Selecionar um tema adequado ao segmento.
+4. Preparar uma demonstração personalizada de orçamento e agendamento.
+5. Mostrar progresso baseado nas etapas reais.
+6. Exibir uma prévia editável.
+7. Destacar dados ausentes.
+8. Permitir minha aprovação.
+9. Gerar o link.
+10. Preparar a mensagem daquela empresa.
+
+Tudo deve acontecer dentro da mesma plataforma.
+
+“Criar projeto” significa criar a configuração e a página daquela empresa, sem gerar código arbitrário ou uma nova infraestrutura para cada cliente.
+
+Permita retomar falhas e impeça duplicações. Não mostre sucesso antes de salvar.
+
+Esse botão representa minha decisão de trabalhar aquele potencial cliente. Ele não significa que a empresa aceitou contratar.
+
+20. DEMONSTRAÇÃO E ATIVAÇÃO
+
+A demonstração deve:
+- Ser identificada como proposta independente preparada por Nicolas.
+- Não se apresentar como site oficial da empresa.
+- Não aceitar reservas reais.
+- Não coletar dados de consumidores.
+- Identificar conteúdo ilustrativo como exemplo.
+- Não inventar informações comerciais.
+- Usar identidade neutra quando não houver material autorizado.
+- Permitir expiração, desativação e exclusão.
+
+Evite indexação, sem tratar isso como proteção de acesso.
+
+Quando a empresa contratar, eu clico em “Ativar cliente”.
+
+Antes de habilitar reservas reais:
+- Confirmo serviços.
+- Confirmo preços.
+- Confirmo duração e horários.
+- Confirmo contatos.
+- Defino regras.
+- Configuro o acesso administrativo.
+
+Aproveite a demonstração existente, sem refazer o cadastro.
+
+21. MENSAGENS PRONTAS EM NOME DO NICOLAS
+
+Gere mensagens curtas e naturais em português brasileiro:
+- Primeiro contato.
+- Apresentação da demonstração.
+- Resposta para interessado.
+- Proposta com preço definido por mim.
+- Até dois acompanhamentos manuais.
+- Resposta para quem não quiser.
+- Entrega após ativação.
+
+Exemplo:
+
+“Olá, pessoal da [empresa]! Sou o Nicolas. Preparei uma demonstração de como poderia funcionar uma página de orçamento e agendamento para vocês: [link]. É uma prévia, ainda sem reservas ativas. Se fizer sentido, posso explicar como adaptar aos serviços e horários da empresa.”
+
+Personalize somente com informações verificadas.
+
+Não invente que conheço a empresa, sou cliente ou identifiquei problemas internos. Não prometa aumento de vendas.
+
+Inclua:
+- Editar mensagem.
+- Copiar número.
+- Copiar mensagem.
+- Abrir demonstração.
+- Abrir conversa com texto preparado quando houver contato apropriado.
+- Registrar contato realizado.
+
+Eu reviso e envio manualmente. Não implemente disparos automáticos ou em massa.
+
+Não registre envio apenas porque a mensagem foi copiada ou a conversa foi aberta.
+
+Não inclua senhas, tokens ou chaves em mensagens comerciais. Entregue acesso administrativo por um fluxo seguro separado.
+
+22. GESTÃO DAS NEGOCIAÇÕES
+
+Crie um quadro com:
+- Novo.
+- Analisado.
+- Demonstração preparada.
+- Contatado.
+- Respondeu.
+- Interessado.
+- Proposta enviada.
+- Fechado.
+- Sem interesse.
+- Não contatar.
+
+Permita observações, último contato e próxima ação.
+
+Mostre lembretes no painel.
+
+Empresas marcadas como “Não contatar” devem ser excluídas das filas de abordagem e novas sugestões.
+
+Indicadores devem refletir registros reais.
+
+23. IA OPCIONAL
+
+Pesquise provedores e modelos com opções gratuitas atuais. Recomende uma opção considerando qualidade, limites e facilidade de configuração.
+
+A IA deve ser opcional. Reservas, agenda, cálculos e mensagens por modelos devem continuar funcionando sem ela.
+
+Implemente:
+- Limites de consumo.
+- Tratamento de falhas.
+- Cache quando apropriado.
+- Alternativa sem IA.
+- Preservação dos dados preenchidos.
+
+Mantenha credenciais no servidor e não envie dados pessoais desnecessários.
+
+Não presuma que minha assinatura do Manus oferece uma API gratuita para os usuários do sistema.
+
+24. SEGURANÇA
+
+Implemente:
+- Autenticação consolidada.
+- Autorização no servidor em cada operação.
+- Isolamento entre empresas.
+- Expiração e revogação de sessões.
+- Recuperação segura de acesso.
+- Limites de tentativas de login.
+- Validação de entradas.
+- Proteção contra XSS.
+- Proteção contra CSRF quando aplicável.
+- Proteção contra fórmulas maliciosas em CSV.
+- Limites de requisições.
+- Logs sem segredos.
+- Rotação de credenciais.
+- Backup e restauração.
+
+Use mecanismos de sessão adequados à autenticação escolhida. Não invente criptografia.
+
+Mantenha credenciais do banco, chaves privilegiadas e tokens de IA exclusivamente no servidor.
+
+Não exponha segredos em HTML, JavaScript público, respostas da API, mapas de código ou variáveis públicas.
+
+Diferencie configurações publicáveis de segredos reais e aplique políticas de acesso correspondentes.
+
+Proteja consultas a URLs contra acesso a redes internas e serviços privados.
+
+Trate páginas externas e respostas da IA como conteúdo não confiável. Elas não podem executar código, alterar permissões ou controlar operações administrativas.
+
+Não use bloqueio de botão direito, ofuscação ou ocultação de links como substitutos da segurança.
+
+Inclua exclusão de dados, retenção adequada e preferência de não contato.
+
+Não prometa segurança de 100%. Informe o que foi implementado, testado e quais limitações permanecem.
+
+25. MARCA PRÓPRIA
+
+O visitante deve ver OrçaAgenda ou a identidade da empresa atendida.
+
+Não exiba detalhes internos como:
+- Nomes de tabelas.
+- Credenciais.
+- Identificadores privados.
+- Mensagens técnicas brutas.
+- Links de administração dos fornecedores.
+
+Use páginas de erro claras e personalizadas. Mantenha detalhes técnicos necessários apenas em logs protegidos.
+
+Preserve atribuições obrigatórias.
+
+Ensine como usar o endereço gratuito da hospedagem e, opcionalmente, conectar domínio próprio.
+
+26. CONFIGURAÇÃO INICIAL
+
+Crie um assistente que:
+- Identifique parâmetros ausentes.
+- Explique onde configurar cada item.
+- Teste conexões sem revelar segredos.
+- Oriente a criação da estrutura do banco.
+- Configure o primeiro administrador com segurança.
+- Impeça que outra pessoa assuma a administração.
+- Mostre os próximos passos.
+
+Não deixe senhas padrão em produção.
+
+Não peça credenciais secretas no chat. Oriente a configuração diretamente nos serviços ou use mecanismos seguros disponibilizados pelo ambiente.
+
+27. TUTORIAL COMPLETO PARA WINDOWS
+
+Ensine:
+1. Quais contas criar.
+2. Quais planos gratuitos selecionar.
+3. Quais programas instalar.
+4. Como baixar e extrair o projeto.
+5. Qual pasta abrir.
+6. Qual terminal utilizar.
+7. Como instalar dependências.
+8. Como criar o banco.
+9. Como executar migrações.
+10. Como configurar autenticação.
+11. Como preencher variáveis de ambiente.
+12. Como executar localmente.
+13. Como testar.
+14. Como criar repositório privado, se necessário.
+15. Quais arquivos não enviar ao repositório.
+16. Como publicar na hospedagem escolhida.
+17. Como configurar segredos de produção.
+18. Como encontrar o endereço.
+19. Como configurar URLs autorizadas.
+20. Como criar o administrador.
+21. Como cadastrar uma empresa.
+22. Como testar uma reserva.
+23. Como pesquisar empresas.
+24. Como usar “Aceitar cliente e criar projeto”.
+25. Como enviar a mensagem preparada.
+26. Como ativar um cliente.
+27. Como atualizar.
+28. Como voltar a uma versão anterior.
+29. Como fazer backup e restaurar.
+30. Como resolver erros comuns.
+
+Para cada comando, diga onde executar e qual resultado esperar.
+
+Diferencie CMD e PowerShell. Arquivos .bat devem funcionar em pastas com espaços e acentos.
+
+Inclua uma tabela com cada variável, sua finalidade, onde obter, se é secreta e onde configurar.
+
+Deixe a publicação preparada e explique as etapas que dependem das minhas contas. Não aceite cobranças sem autorização.
+
+28. TESTES
+
+Execute build e testes relevantes.
+
+Verifique:
+- Login e encerramento de sessão.
+- Recuperação de acesso.
+- Isolamento entre empresas.
+- Operações sem autorização.
+- Cálculo de preço no servidor.
+- Reservas simultâneas.
+- Repetição de solicitações.
+- Aprovação manual.
+- Expiração de horários retidos.
+- Cancelamento e reagendamento.
+- Suspensão de empresas.
+- Deduplicação de contatos.
+- Não contatar.
+- Mensagens sem dados inventados.
+- Criação automática de demonstrações.
+- Retomada de falhas sem duplicação.
+- Bloqueio de reservas reais em demonstrações.
+- Ativação de clientes.
+- Limites de consumo.
+- Falhas da IA e da busca.
+- Experiência no celular.
+- Navegação por teclado.
+- Movimento reduzido.
+
+Inspecione as telas em navegador e corrija problemas visuais.
+
+Verifique arquivos públicos e requisições para detectar exposição de segredos.
+
+Diferencie testes locais, simulados e reais. Não afirme que validou minha hospedagem sem ter feito isso.
+
+29. ENTREGA FINAL
+
+Entregue:
+- Código completo e exportável.
+- ZIP organizado.
+- Migrações do banco.
+- Configurações de exemplo sem segredos.
+- Guia de execução local.
+- Guia de publicação.
+- Instruções de autenticação e banco.
+- Backup, atualização e restauração.
+- Custos e limites verificados com fontes.
+- Funcionalidades concluídas.
+- Resultados dos testes.
+- Pendências dependentes das minhas contas.
+
+Se não puder gerar arquivos, forneça os conteúdos completos com nomes e caminhos. Não omita código essencial.
+
+Sugira valores de implantação e mensalidade para eu vender o serviço, diferenciando estimativas comerciais de custos reais. Considere manutenção, suporte e limites de uso.
+
+30. COMO TRABALHAR
+
+Comece do zero. Não solicite projeto anterior.
+
+Primeiro valide a arquitetura quanto a custo zero inicial e uso comercial. Depois implemente:
+- Autenticação e isolamento.
+- Empresas, serviços e agenda.
+- Orçamentos e reservas.
+- Prospecção e negociações.
+- Criação automática de demonstrações.
+- Mensagens personalizadas.
+- Design e animações.
+- Testes.
+- Empacotamento e tutorial.
+
+Tome decisões técnicas razoáveis e pergunte somente quando faltar uma informação indispensável.
+
+Mantenha um registro de progresso para continuar sem refazer etapas.
+
+Se faltar uma credencial, implemente a integração e documente a configuração. Não substitua uma integração por dados fictícios apresentados como reais.
+
+Não encerre apenas com um plano ou protótipo visual.
+
+O resultado esperado é: configuro e publico uma vez; encontro empresas, seleciono uma, clico em “Aceitar cliente e criar projeto”, reviso a demonstração e recebo o link com a mensagem pronta. Quando a empresa contratar, ativo seu sistema de orçamento e agendamento pelo painel.

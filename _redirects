@@ -1,0 +1,2 @@
+# SPA fallback: static assets are served normally; application routes load the React entry.
+/* /index.html 200

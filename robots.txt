@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /demonstracao/
+# robots.txt is not access control. Demonstrations use unguessable tokens and can be revoked in the database.

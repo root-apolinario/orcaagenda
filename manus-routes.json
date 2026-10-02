@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"OrçaAgenda"},{"path":"/login","title":"Entrar"},{"path":"/recuperar-acesso","title":"Recuperar acesso"},{"path":"/agenda/:slug","title":"Agendamento público"},{"path":"/demonstracao/:token","title":"Demonstração OrçaAgenda"},{"path":"/setup","title":"Configuração inicial"}]}
